@@ -6,6 +6,16 @@ function generateArray(size) {
   return result;
 }
 
+function randomArray(size) {
+  const arr = [];
+
+  for (let i = 0; i <= size; ++i) {
+    arr.push(Math.round(Math.random() * size));
+  }
+
+  return arr;
+}
+
 function stepCount() {
   return (function() {
     ++stepCount.step;
@@ -13,4 +23,4 @@ function stepCount() {
 }
 stepCount.step = 0;
 
-module.exports = { stepCount,generateArray };
+module.exports = { stepCount, generateArray, randomArray };
