@@ -24,3 +24,6 @@ function stepCount() {
 stepCount.step = 0;
 
 module.exports = { stepCount, generateArray, randomArray };
+
+
+
