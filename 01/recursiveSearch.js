@@ -6,10 +6,10 @@ function binarySearch(arr, findItem) {
 
   return (function rec() {
     stepCount();
-    
+
     let mid = Math.floor((low + high) / 2);
     let value = arr[mid];
-console.log("mid", mid)
+    console.log("mid", mid);
     if (value === findItem) {
       return mid;
     }
