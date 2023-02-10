@@ -1,36 +1,35 @@
 "use strict";
 
-function arrSum(arr) {
-  if (!arr.length) {
+function getNumbersSum(nums) {
+  if (!nums.length) {
     return 0;
   }
-  const last = arr.pop();
+  const last = nums.pop();
 
-  return last + arrSum(arr);
+  return last + getNumbersSum(nums);
 }
 
-function arrMultiple(arr) {
-  if (!arr.length) {
+function multipleNumbers(nums) {
+  if (!nums.length) {
     return 1;
   }
 
-  const last = arr.pop();
+  const last = nums.pop();
 
-  return last * arrMultiple(arr);
+  return last * multipleNumbers(nums);
 }
 
-function arrCount(arr) {
-  if (!arr.length) {
+function getNumbersCount(nums) {
+  if (!nums.length) {
     return 0;
   }
 
-  arr.pop();
-  return 1 + arrCount(arr);
+  nums.pop();
+  return 1 + getNumbersCount(nums);
 }
 
-const data = [1, 2, 3, 4];
-const secondData = [1, 2, 3, 4];
+const numbers = [1, 2, 3, 4];
 
-console.log(arrSum(data));
-console.log(arrMultiple(secondData));
-console.log(arrCount([1, 2, 3, 4]));
+console.log(getNumbersSum(numbers));
+console.log(multipleNumbers(numbers));
+console.log(getNumbersCount(numbers));

@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/01/binarySearch.js"
+      "program": "${workspaceFolder}/01/recursiveSearch.v2.js"
     }
   ]
 }
